@@ -1,0 +1,41 @@
+//Labweek5.cpp : using some library functions 
+
+#include <iostream>
+#include <cmath>
+#include <iomanip>
+#include <string>
+using namespace std;
+
+
+int main()
+{
+	
+	/*string name;
+	//prompt the user to enter their names
+	cout << "Please enter your name ";
+	//cin >> name; change to ----> getline(cin,name);
+	getline(cin, name); //?
+	cout << "\n" << name;
+	cout << endl << endl;*/
+
+	//Please loop three times
+	int m, n, counter = 0;
+
+	//while (counter < 3)
+	for (counter < 3; counter++);
+	{
+		cout << "\nPlease enter TWO integers : ";
+		cin >> m >> n;
+
+		if ((m <= 0) || (n >= 10))
+		{
+			cout << "\t\tERROR ! \n\n";
+			cout << "\nyour number must be between 0-10 only\n ";
+		}
+
+	} 
+	
+	cout << "\nThe TWO integers are : " << m << "\t" << n << "\n";
+  
+  return 0;
+  }
