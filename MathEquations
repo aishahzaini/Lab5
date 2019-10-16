@@ -1,0 +1,42 @@
+//Labweek5.cpp : using some library functions 
+
+#include <iostream>
+#include <cmath>
+#include <iomanip>
+using namespace std;
+
+
+int main()
+{ //coding math equations
+  //test your skill to code arithmetics
+  //y = x + 9
+	int x = 4, z = 5;
+	double y = 0.0;
+	
+	y = 6 * x;
+	cout << "y = 6 * x is ";
+	cout << y << endl;
+
+	int a, b = 3, c = 1;
+	a = (2 * b) + (4 * c);
+	cout << "a = (2 * b) + (4 * c) is ";
+	cout << setfill('*') << setw(10) << a << endl;
+	cout << "using static cast a is " << showpoint << static_cast<double>(a) <<  endl; // if don't want to show the points, put cout<<noshowpoint
+
+	y = x * x * x; //another math function pow( , )
+	y = pow(x, 3);
+	cout << "y = x * x * x is ";
+	cout << fixed << setprecision(2) << y << endl; //using setprecision must have iomanip
+
+	y = x / pow(z,2) + 2;
+	cout << "y = x / z + 2 is ";
+	cout << y << endl; //using static cast
+	cout << "using static cast y is " << static_cast<int>(y) << endl;
+	cout << static_cast<int>(y) << endl;
+
+	y = pow(x,2) / pow(y, 2);
+	cout << y << endl;
+
+
+	return 0;
+}
